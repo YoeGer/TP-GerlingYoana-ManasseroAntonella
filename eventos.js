@@ -1,11 +1,10 @@
 //QUE INGRESE EL USUARIO
-let input = document.querySelector('input');
+let input = document.querySelector('.inputUsuario');
 input.addEventListener('change', guardarUsuario);
 let usuario; 
 
 function guardarUsuario(){
     usuario = input.value;         
-    alert("Se guardo usuario " + usuario); 
 }
 
 // COMENTARIOS 
@@ -27,10 +26,16 @@ function clickBotonComentar(){
     }
     else
     {
-        alert("Debe ingresar usuario"); 
+        if (usuario == undefined)
+        {
+            document.getElementById("mensajeError").innerHTML = "<p><strong><br>Debe ingresar un nombre de usuario para poder dejar su comentario</strong></p>";
+        }
+        if (comentario == undefined)
+        {
+            document.getElementById("mensajeError").innerHTML = "<p><strong><br>No puede dejar un comentario vacio</strong></p>";
+        }
     }
 }
-
 
 //FUNCIONALIDAD BOTON SEGUIR 
 

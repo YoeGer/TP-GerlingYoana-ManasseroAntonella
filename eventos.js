@@ -45,10 +45,15 @@ function cambiarTexto(){
     else this.value="Seguir";
     
 }
+
 //FUNCIONALIDAD BOTON ME GUSTA
 
 let botonMeGusta = document.getElementById("botonMeGusta"); 
 botonMeGusta.addEventListener("click", cambiarCantidadLikes);
+
+function cambiarCantidadLikes(){
+    document.getElementById("likes").innerHTML = "<p><strong>201</strong> Likes</p>";
+}
 
 
 

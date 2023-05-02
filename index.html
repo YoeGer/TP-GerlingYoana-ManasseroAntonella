@@ -17,7 +17,7 @@
                 <img src="\imagenes\logo globo.png" alt="Logo globo">
             </div>
             <form action="" class="cajaUsuario">
-                <input type="text" placeholder="Ingresa tu usuario...">
+                <input id="inputUsuario" type="text" placeholder="Ingresa tu usuario...">
             </form>
         </div>
     </header>
@@ -32,19 +32,30 @@
                     <p><strong>Telefono:</strong> 918-936-9585</p>
                     <p><strong>Ciudad:</strong> Tokyo, Japon</p>
                     <p>Trabajando en <strong>Lawn N</strong></p></li>
-                    <li><button class="botonSeguir">Seguir</button></li>
+                    <li><input type="submit" value="Seguir" id="botonSeguir" class="botonSeguir"/></li>
             </ul>
         </div>
         <div class="publicacion">
             <p>Publicado hace 1 semana</p>
             <img src="\imagenes\publicacion.jpeg" alt="Foto de publicacion">
             <div class="meGustaYLikes">
-                <button class="botonMeGusta"><strong>Me gusta</strong></button>
+                <button class="botonMeGusta" id="botonMeGusta"><strong>Me gusta</strong></button>
                 <p class="likes"><strong>200</strong> Likes</p>
             </div>
             <div class="comentarios">
-                <input type="text" placeholder="Deja tu comentario..." id="comentario"><br><br>
-                <button class="botonComentar">Comentar</button>
+                <p><strong>Comentarios</strong></p>
+                <p><strong>Juan Perez</strong> ¡Wow, esa foto de Tokio es impresionante! </p>
+                <p><strong>Kathleen J Rennie</strong> ¡Esta foto de Tokio es simplemente espectacular! Me trae tantos recuerdos.</p>
+                <div id="divComentarios">
+                    
+                </div>
+                <div class="inputYBoton">
+                    <form action="" class="cajaComentario">
+                        <input id="inputComentario" class="inputComentario" type="text" placeholder="Deja tu comentario...">
+                    </form>
+                    <button class="botonComentar" id="botonComentar">Comentar</button>
+                </div>
+                
             </div>
             
         </div>
@@ -57,6 +68,6 @@
         </div>
     </div>
   
-    <script src=""></script>
+    <script src="eventos.js"></script>
 </body>
 </html>

@@ -4,7 +4,8 @@ input.addEventListener('change', guardarUsuario);
 let usuario; 
 
 function guardarUsuario(){
-    usuario = input.value;         
+    usuario = input.value;   
+
 }
 
 // COMENTARIOS 
@@ -20,9 +21,9 @@ let botonComentar = document.getElementById("botonComentar");
 botonComentar.addEventListener("click", clickBotonComentar); 
 
 function clickBotonComentar(){
-    if ((usuario != undefined) && (comentario != undefined ))   //Corroboro que haya ingresado el usuario y un comentario
+    if ((usuario != undefined) && (comentario != undefined ))   
     {
-        divComentarios.innerHTML = usuario + ' ' + comentario;
+        divComentarios.innerHTML = "<strong>" + usuario + "</strong> " + comentario;
     }
     else
     {
